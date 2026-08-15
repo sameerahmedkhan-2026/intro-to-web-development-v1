@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Restaurant Menu</h1>
+    </header>
+
+    <main class="container">
+      <section class="menu" id="menu" aria-label="Menu items"></section>
+
+      <aside class="cart" id="cart" aria-label="Shopping cart">
+        <h2>Your Order</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+        <button id="clear-cart" class="btn">Clear Order</button>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
