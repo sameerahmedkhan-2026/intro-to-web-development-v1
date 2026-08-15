@@ -1,0 +1,11 @@
+use of semantic html elements and their role in accessibility.
+
+colors selection.
+
+use of keyboard navigation and focus states for interactive elements.
+
+get chrome extension.
+https://wave.webaim.org/
+https://www.youtube.com/watch?v=ITUDiTgAZY0&t=14s
+
+scope col, row for tables.
