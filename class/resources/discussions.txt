@@ -1,0 +1,9 @@
+1. code editors: 
+vs code - microsoft - github copilot -
+google's antigravity - built on top of vs code, with ai agents - gemini, 
+cursor - 
+open ai codex - 
+
+
+
+

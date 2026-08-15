@@ -4,6 +4,7 @@ This folder contains the work done by students during the class. Each student ha
 
 ## list of projects and assignments:
 
-- [TASK 1: newspaper Website layout](projects/newspaper-website-layout)
-- [TASK 2: coffee day website layout](projects/coffee-day-website)
-- [TASK 3: portfolio website layout](projects/portfolio-website)
+- [task 1: html table layouts](projects/table-layouts)
+- [TASK 2: newspaper Website layout](projects/newspaper-website-layout)
+- [TASK 3: coffee day website layout](projects/coffee-day-website)
+- [TASK 4: portfolio website layout](projects/portfolio-website)
