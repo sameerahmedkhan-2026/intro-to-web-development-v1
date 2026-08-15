@@ -45,3 +45,15 @@ console.log(me.getAddress());
 // console.log(this.scrollY);
 // console.log(window.scrollY);
 
+
+const pulledOutFunction = me.getAddress;
+console.log(pulledOutFunction()); // this will not work as expected because the context of 'this' is lost when we pull out the function from the object.
+// To fix this, we can use the bind method to bind the function to the correct context.
+const boundFunction = me.getAddress.bind(me);
+console.log(boundFunction()); // this will work as expected because we have bound the function to the correct context.
+
+// The bind method creates a new function that, when called, has its 'this' keyword set to the provided value. 
+// In this case, we are binding the getAddress function to the me object, so that when we call boundFunction, 
+// 'this' inside the getAddress function will refer to the me object, allowing us to access its properties.
+
+

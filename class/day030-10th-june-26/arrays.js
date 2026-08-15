@@ -85,6 +85,54 @@ for (let i = 0; i < cities.length; i++) {
 }
 
 // method 2
+const printCity = function (city) {
+    console.log(city);
+};
+cities.forEach(printCity);
+
+// method 3
 cities.forEach(function (city) {
     console.log(city);
 });
+
+// method 4
+cities.forEach((city) => {
+    console.log(city);
+});
+
+// passing functions as arguments to other functions is a common pattern in JavaScript, and it allows us to create more flexible and reusable code.
+// this is a fundamental concept in JavaScript and is used extensively in functional programming and event handling.
+// functions that take other functions as arguments are called higher-order functions.
+// for example, the forEach method is a higher-order function because it takes a function as an argument and calls that function for each element in the array.
+// functions that return other functions are also higher-order functions.
+function createMultiplier(multiplier) {
+    return function (number) {
+        return number * multiplier;
+    };
+}
+
+const double = createMultiplier(2);
+const triple = createMultiplier(3);
+
+console.log(double(5)); // Output: 10
+console.log(triple(5)); // Output: 15
+
+// in this example, the createMultiplier function is a higher-order function because it returns another function that multiplies a number by a specified multiplier. 
+// The double and triple functions are created by calling createMultiplier with different multiplier values, and they can be used to multiply numbers by 2 and 3, respectively.
+
+// higher-order functions are a powerful tool in JavaScript and are used in many libraries and frameworks to create more flexible and reusable code.
+// functions are first-class citizens in JavaScript, which means they can be treated like any other value. 
+// They can be assigned to variables, passed as arguments to other functions, and returned from functions. 
+// This allows for a lot of flexibility in how we write and organize our code.
+
+// q. what is the difference between an array and an object in JavaScript?
+// A. An array is an ordered collection of data, while an object is an unordered collection of key-value pairs. 
+// Arrays are accessed using numeric indices, while objects are accessed using keys. 
+// Arrays have a length property that keeps track of the number of elements, while objects do not have a length property. 
+// Arrays are typically used for lists of items, while objects are used for more complex data structures that require key-value pairs.
+
+// q2. What happens when you access an array index that is out of bounds?
+// A. When you access an array index that is out of bounds, it returns undefined.
+const myArray2 = [1, 2, 3];
+console.log(myArray2[5]); // Output: undefined  
+
